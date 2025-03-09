@@ -122,7 +122,7 @@ class _SurveyItemState extends State<SurveyItem> {
                   height: 16,
                 ),
                 const Text(
-                  'Sela di jari tangan',
+                  'jari tangan',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AppFontSize.caption,
@@ -142,7 +142,7 @@ class _SurveyItemState extends State<SurveyItem> {
                   height: 16,
                 ),
                 const Text(
-                  'Pergelangan tangan depan',
+                  'Pergelangan tangan ',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AppFontSize.caption,
@@ -162,7 +162,7 @@ class _SurveyItemState extends State<SurveyItem> {
                   height: 16,
                 ),
                 const Text(
-                  'Siku luar',
+                  'Siku',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AppFontSize.caption,
@@ -182,7 +182,7 @@ class _SurveyItemState extends State<SurveyItem> {
                   height: 16,
                 ),
                 const Text(
-                  'Lipat ketiak depan',
+                  'Lipat ketiak',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AppFontSize.caption,

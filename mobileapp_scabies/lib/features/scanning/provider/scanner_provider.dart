@@ -44,6 +44,7 @@ class ScannerProvider with ChangeNotifier {
   final GlobalKey<FormState> sectionFourTestFormKey = GlobalKey<FormState>();
 
   final TextEditingController namaLengkapController = TextEditingController();
+  final TextEditingController tanggalLahirController = TextEditingController();
   final TextEditingController noHpController = TextEditingController();
   final TextEditingController alamatController = TextEditingController();
 
@@ -86,6 +87,12 @@ class ScannerProvider with ChangeNotifier {
   List<String> sectionFourQuestionTen = [];
   List<String> sectionFourQuestionEleven = [];
   List<String> sectionFourQuestionTweleve = [];
+
+  //tanggal
+  void setTanggalLahir(DateTime date) {
+    tanggalLahirController.text = "${date.toLocal()}".split(' ')[0];
+    notifyListeners();
+  }
 
   // Set Status Crop Image done or not
   void cropImage() {

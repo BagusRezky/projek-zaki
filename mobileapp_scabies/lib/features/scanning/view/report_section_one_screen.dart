@@ -91,7 +91,7 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
 
               // Radio Question 1
               const Text(
-                'Sela di jari tangan',
+                'jari tangan',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -150,7 +150,7 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
 
               // Radio Question 2
               const Text(
-                'Pergelangan tangan depan',
+                'Pergelangan tangan',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -209,7 +209,7 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
 
               // Radio Question 3
               const Text(
-                'Siku luar',
+                'Siku',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -268,7 +268,7 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
 
               // Radio Question 4
               const Text(
-                'Lipat ketiak depan',
+                'Lipat ketiak',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -535,12 +535,12 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
                   }
                 },
                 style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14.0),
                     ),
                   ),
-                  backgroundColor: const MaterialStatePropertyAll(
+                  backgroundColor: const WidgetStatePropertyAll(
                     AppColors.brandColor,
                   ),
                 ),

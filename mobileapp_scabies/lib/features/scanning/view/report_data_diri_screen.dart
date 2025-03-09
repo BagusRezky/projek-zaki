@@ -107,6 +107,41 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                   height: 16,
                 ),
                 const Text(
+                  'Tanggal Lahir',
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                CustomTextFormField(
+                  textInputAction: TextInputAction.next,
+                  validator: (value) =>
+                      scannerProvider.validatePertanyaan(value, context),
+                  controller: scannerProvider.tanggalLahirController,
+                  enable: true,
+                  maxLines: 1,
+                  hint: "Tambahkan tanggal lahir anda",
+                  // keyboardType: TextInputType.date,
+                  // onChanged: (_) {},
+                  // focus: FocusNode(),
+                  suffixIcon: IconButton(
+                      icon: const Icon(Icons.calendar_today),
+                      onPressed: () async {
+                        DateTime? picked = await showDatePicker(
+                          context: context,
+                          initialDate: DateTime.now(),
+                          firstDate: DateTime(1900),
+                          lastDate: DateTime.now(),
+                        );
+                        if (picked != null) {
+                          scannerProvider.tanggalLahirController.text =
+                              "${picked.day}-${picked.month}-${picked.year}";
+                        }
+                      }),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                const Text(
                   'Jenis Kelamin',
                 ),
                 const SizedBox(
@@ -215,12 +250,12 @@ class _ReportDataDiriScreenState extends State<ReportDataDiriScreen> {
                     }
                   },
                   style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(14.0),
                       ),
                     ),
-                    backgroundColor: const MaterialStatePropertyAll(
+                    backgroundColor: const WidgetStatePropertyAll(
                       AppColors.brandColor,
                     ),
                   ),

@@ -49,6 +49,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
       enabled: widget.enable,
       controller: widget.controller,
       textInputAction: widget.textInputAction,
@@ -60,6 +61,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       ),
       focusNode: widget.focus,
       decoration: InputDecoration(
+        suffixIcon: widget.suffixIcon,
         contentPadding: const EdgeInsets.all(16),
         border: Theme.of(context).inputDecorationTheme.border,
         filled: true,
