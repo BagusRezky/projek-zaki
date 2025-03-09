@@ -163,7 +163,7 @@ class HistoryItemWidget extends StatelessWidget {
                     height: 4,
                   ),
                   Text(
-                    scabiesResult == 'SCABIES' ? 'Scabies' : 'Bukan Scabies',
+                    scabiesResult == 'SCABIES' ? 'Skabies' : 'Bukan Skabies',
                     style: const TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.w500,

@@ -165,8 +165,8 @@ class HistoryDetailScreen extends StatelessWidget {
                         ),
                         Text(
                           scabiesResult == 'SCABIES'
-                              ? 'Scabies'
-                              : 'Bukan Scabies',
+                              ? 'Skabies'
+                              : 'Bukan Skabies',
                           style: const TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
@@ -186,14 +186,14 @@ class HistoryDetailScreen extends StatelessWidget {
                 children: [
                   scabiesResult == 'SCABIES'
                       ? const Text(
-                          'Scabies merupakan penyakit kulit menular yang disebabkan oleh masuknya tungau kecil ke dalam lapisan kulit luar. Scabies dapat menyebabkan gatal intens dan ruam. Scabies dapat menyebabkan luka pada kulit dan komplikasi serius seperti septisemia (infeksi aliran darah), penyakit jantung, dan masalah ginjal.',
+                          'Skabies merupakan penyakit kulit menular yang disebabkan oleh masuknya tungau kecil ke dalam lapisan kulit luar. Skabies dapat menyebabkan gatal intens dan ruam. Skabies dapat menyebabkan luka pada kulit dan komplikasi serius seperti septisemia (infeksi aliran darah), penyakit jantung, dan masalah ginjal.',
                           style: TextStyle(
                             fontSize: 14,
                           ),
                           textAlign: TextAlign.center,
                         )
                       : const Text(
-                          'Hasil deteksi menyatakan bukanlah Scabies. Namun, jika Anda mengalami masalah pada kulit, kami menyarankan untuk segera mencari bantuan dari tenaga medis.',
+                          'Hasil deteksi menyatakan bukanlah Skabies. Namun, jika Anda mengalami masalah pada kulit, kami menyarankan untuk segera mencari bantuan dari tenaga medis.',
                           style: TextStyle(
                             fontSize: 14,
                           ),

@@ -21,7 +21,7 @@ class _ReportSectionOneScreenState extends State<ReportSectionOneScreen> {
       appBar: AppBar(
         centerTitle: false,
         title: const Text(
-          'Tes Scabies',
+          'Tes Skabies',
           style: TextStyle(
             color: AppColors.white,
             fontSize: AppFontSize.bodyLarge,

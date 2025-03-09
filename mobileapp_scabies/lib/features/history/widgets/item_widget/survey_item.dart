@@ -90,7 +90,7 @@ class _SurveyItemState extends State<SurveyItem> {
         ),
         child: ExpansionTile(
           title: Text(
-            'Survey Test Scabies Pasien',
+            'Survey Test Skabies Pasien',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: AppFontSize.bodySmall,
