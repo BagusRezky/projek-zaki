@@ -416,7 +416,7 @@ class _SurveyItemState extends State<SurveyItem> {
                   height: 16,
                 ),
                 const Text(
-                  'Sela Jari',
+                  'Sela Jari Tangan',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AppFontSize.caption,

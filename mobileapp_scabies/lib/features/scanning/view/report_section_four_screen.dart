@@ -92,7 +92,7 @@ class _ReportSectionFourScreenState extends State<ReportSectionFourScreen> {
 
               // Checkbox Question 1
               const Text(
-                'Sela Jari',
+                'Sela Jari Tangan',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -262,7 +262,7 @@ class _ReportSectionFourScreenState extends State<ReportSectionFourScreen> {
 
               // Checkbox Question 3
               const Text(
-                'Pergelangan tangan depan',
+                'Pergelangan Tangan',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -429,7 +429,7 @@ class _ReportSectionFourScreenState extends State<ReportSectionFourScreen> {
 
               // Checkbox Question 5
               const Text(
-                'Siku Luar',
+                'Siku',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -595,7 +595,7 @@ class _ReportSectionFourScreenState extends State<ReportSectionFourScreen> {
 
               // Checkbox Question 7
               const Text(
-                'Lipat Ketiak Depan',
+                'Lipat Ketiak',
                 style: TextStyle(
                   fontSize: AppFontSize.bodySmall,
                   fontWeight: FontWeight.bold,
@@ -1142,12 +1142,12 @@ class _ReportSectionFourScreenState extends State<ReportSectionFourScreen> {
                   warningSubmitTest(context);
                 },
                 style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14.0),
                     ),
                   ),
-                  backgroundColor: const MaterialStatePropertyAll(
+                  backgroundColor: const WidgetStatePropertyAll(
                     AppColors.brandColor,
                   ),
                 ),
@@ -1204,7 +1204,7 @@ warningSubmitTest(BuildContext context) {
               showCameraModal(context);
             },
             style: const ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll(
+              backgroundColor: WidgetStatePropertyAll(
                 AppColors.brandColor,
               ),
             ),

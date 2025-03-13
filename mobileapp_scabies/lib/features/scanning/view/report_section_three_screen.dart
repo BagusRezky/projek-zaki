@@ -311,12 +311,12 @@ class _ReportSectionThreeScreenState extends State<ReportSectionThreeScreen> {
                     }
                   },
                   style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(14.0),
                       ),
                     ),
-                    backgroundColor: const MaterialStatePropertyAll(
+                    backgroundColor: const WidgetStatePropertyAll(
                       AppColors.brandColor,
                     ),
                   ),
